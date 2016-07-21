@@ -56,12 +56,12 @@ class graphs:
                     return newpath
         return None
 
-    def findshortestpath(self, start, end, path=[]):
+    def findPathWithMinimumNodes(self, start, end, path=[]):
 
         if start not in self.nodelist:
             return None
 
-        path = path + [start]
+        path = path + s[start]
         if start == end:
             return path
 
@@ -76,5 +76,23 @@ class graphs:
             return shortestpath
         return None
 
-    def findleastweightpath(self, start, end, path=[]):
-        print 'hello'
+    
+    def findShortestPath(self, start, end, path=[]):
+        if start not in self.nodelist:
+            return None
+
+        path = path + [start]
+        if start == end:
+            return path
+        distance = 0
+
+        for node in self.nodelist[start].keys():
+            if node not in path:
+                distance = distance + self.nodelist[start][node]
+                newpath = self.findpath(node, end, path)
+                if newpath:
+                    if (distance == 0 or distance):
+                        shortestpath = newpath
+        if shortestpath:
+            return shortestpath
+        return None
