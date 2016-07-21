@@ -75,3 +75,6 @@ class graphs:
         if shortestpath:
             return shortestpath
         return None
+
+    def findleastweightpath(self, start, end, path=[]):
+        print 'hello'
