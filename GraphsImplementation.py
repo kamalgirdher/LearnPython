@@ -1,4 +1,5 @@
 class graphs:
+
     def __init__(self):
         self.nodelist = {}
 
@@ -56,18 +57,21 @@ class graphs:
         return None
 
     def findshortestpath(self, start, end, path=[]):
-        path = path + [start]
+
         if start not in self.nodelist:
             return None
+
+        path = path + [start]
         if start == end:
             return path
+
         shortestpath = None
         for node in self.nodelist[start].keys():
             if node not in path:
                 newpath = self.findpath(node, end, path)
                 if newpath:
-                    if (not(shortestpath) or len(shortestpath) < len(newpath)):
-                        shortest = newpath
-        if shortest:
-            return shortest
+                    if (not(shortestpath) or len(shortestpath) > len(newpath)):
+                        shortestpath = newpath
+        if shortestpath:
+            return shortestpath
         return None
