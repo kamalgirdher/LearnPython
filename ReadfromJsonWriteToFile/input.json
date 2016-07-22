@@ -1,0 +1,38 @@
+{
+"Employee":[
+	{
+	"name": "Kamal",
+	"dept": "QA Center of Excellence",
+	"id": "1",
+	"City":"New Delhi"
+	},
+	{
+	"name": "Akshay",
+	"dept": "QA Center of Excellence",
+	"id": "2",
+	"manager": "Kamal",
+	"City":"Bangalore"
+	},
+	{
+	"name": "Suzan",
+	"dept": "QA Center of Excellence",
+	"id": "3",
+	"manager": "Kamal",
+	"City":"New Delhi"
+	},
+	{
+	"name": "Ambika",
+	"dept": "DeveOps",
+	"id": "4",
+	"manager": "Suzan",
+	"City":"Goa"
+	},
+	{
+	"name": "Shikhar",
+	"dept": "DeveOps",
+	"id": "5",
+	"manager": "Suzan",
+	"City":"Goa"
+	}
+	]
+}
