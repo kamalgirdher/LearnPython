@@ -15,7 +15,7 @@ print(c)
 print(d)
 ```
 
-*Output*
+**Output**
 ```
 []
 [1, 2, 3]
@@ -30,7 +30,7 @@ a.append('x')
 a.append(3.0)
 print(a)
 ```
-*Output*
+**Output**
 ```
 [1, 'x', 3.0]
 ```
@@ -40,7 +40,7 @@ a.insert(2,'xx')
 print(a)
 ```
 
-*Output*
+**Output**
 ```
 [1, 'x', 'xx', 3.0]
 ```
@@ -50,7 +50,7 @@ b.extend(c)
 print(b)
 ```
 
-*Output*
+**Output**
 ```
 [1, 2, 3, 'a', 'b', 'c']
 ```
@@ -62,7 +62,7 @@ b.remove(4
 print(b)
 ```
 
-*Output*
+**Output**
 ```
 [1, 2, 3, 5, 6]
 ```
@@ -74,7 +74,7 @@ b.pop()
 print(b)
 ```
 
-*Output*
+**Output**
 ```
 [1, 2, 3, 4, 5]
 ```
@@ -86,7 +86,7 @@ b.pop(0)
 print(b)
 ```
 
-*Output*
+**Output**
 ```
 [2, 3, 4, 5, 6]
 ```
