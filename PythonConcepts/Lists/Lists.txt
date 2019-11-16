@@ -25,3 +25,15 @@ print(a)
 #Extending a list
 b.extend(c)
 print(b)
+
+#Remove an element(value) from list
+b=[1,2,3,4,5,6]
+b.remove(4)
+
+#Remove last element from list
+b=[1,2,3,4,5,6]
+b.pop()
+
+#Remove element at specific index from list
+b=[1,2,3,4,5,6]
+b.pop(0)
